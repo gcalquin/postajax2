@@ -1,0 +1,9 @@
+<div class="col-3 card" id="post_<%= post.id %>" style="width: 18rem;">
+   <div class="card-body">
+      <h5 class="card-title"><%= post.title %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= post.created_at %>
+      <p class="card-text"><%= post.content %></p>
+      <a href="#" class="card-link">Editar</a>
+      <%= link_to "Eliminar", post, method: :delete, remote: true %>
+    </div>
+</div>
